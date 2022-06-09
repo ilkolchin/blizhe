@@ -28,6 +28,7 @@
     "webpack-dev-server": "^4.2.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.4"
+    "@babel/runtime": "^7.15.4",
+    "sanitize.css": "^13.0.0"
   }
 }

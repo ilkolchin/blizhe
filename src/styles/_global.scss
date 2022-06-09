@@ -1,1 +1,5 @@
-@use "var";
+@use "var" as *;
+
+body {
+  background-color: $primaryColor;
+}
