@@ -1,5 +1,55 @@
 @use "var" as *;
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: $primaryColor;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: $primaryColor;
+  font-family: 'IBM Plex Serif', serif;
+  color: $textColor;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
