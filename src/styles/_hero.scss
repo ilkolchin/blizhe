@@ -1,0 +1,27 @@
+@use "var" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: $primaryColor;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-style: italic;
+    text-transform: uppercase;
+
+  }
+
+  &__text {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
