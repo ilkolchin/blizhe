@@ -4,12 +4,15 @@
 
 .menu__option {
   margin-right: 15px;
+  border-bottom: 2.5px solid rgba(34, 35, 34, 0);
+  border-radius: 2px;
 
   &:last-child {
     margin-right: 0;
   }
 
   &:hover {
-    text-decoration: underline 1px solid;
+    color: rgba(34, 35, 34, 100%);
+    border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
   }
 }
