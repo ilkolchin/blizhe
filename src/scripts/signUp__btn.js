@@ -8,4 +8,4 @@ const BtnActivation = () => {
   btn.addEventListener("click", handleClick);
 };
 
-BtnActivation();
+// BtnActivation();

@@ -1,15 +1,17 @@
-.about{
+.about {
   display: flex;
   align-items: center;
   justify-items: center;
-}
-.about__wrapper{
-  display: flex;
-  flex-direction: column;
-  margin: 10%;
-}
-.about__title{
-  font-size: 4rem;
-  font-weight: bold;
-  width: 50%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: bold;
+    width: 83%;
+  }
 }
