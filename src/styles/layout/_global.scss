@@ -1,4 +1,4 @@
-@use "var" as *;
+@use "../variables/var" as *;
 
 * {
   box-sizing: border-box;
@@ -9,12 +9,13 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  font-size: $primaryFontSize;
 }
 
 body {
   background: $primaryColor;
   font-family: "IBM Plex Serif", serif;
-  color: $textColor;
+  color: $primarytextColor;
 }
 
 a {

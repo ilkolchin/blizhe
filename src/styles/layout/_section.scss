@@ -1,7 +1,7 @@
-@use "var" as *;
+@use "../variables/var" as *;
 
 .section {
-  height: 100%;
+  height: 100vh;
 }
 
 .about {
