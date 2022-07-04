@@ -1,7 +1,6 @@
 @use "../layout/media.scss" as *;
-@use '../layout/animista';
 
-.about {
+.contacts {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -41,21 +40,37 @@
       font-size: 1.6rem;
     }
 
-    &:last-child {
-      margin-bottom: 0;
+    &:last-of-type {
+      margin-bottom: 3%;
+    }
+  }
+
+  &__innerimages {
+    display: flex;
+    justify-content: space-around;
+
+    &-1,
+    &-2 {
+      width: 30rem;
+      height: 30rem;
+
+      @include fullHD {
+        width: 20rem;
+        height: 20rem;
+      }
     }
   }
 
   &__image {
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-self: center;
 
     @include fullHD {
-      width: 30rem;
-      height: 30rem;
+      width: 20rem;
+      height: 20rem;
     }
   }
 }

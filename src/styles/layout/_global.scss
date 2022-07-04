@@ -9,13 +9,13 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-size: $primaryFontSize;
+  font-size: $baseFontSize;
 }
 
 body {
   background: $primaryColor;
   font-family: "IBM Plex Serif", serif;
-  color: $primarytextColor;
+  color: $baseTextColor;
 }
 
 a {

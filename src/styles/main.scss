@@ -1,12 +1,12 @@
 //template
 @use "./layout/global";
-@use "./layout/section";
 @use "./layout/container";
 
-
 //blocks
+@use "./blocks/section";
 @use "./blocks/header";
 @use "./blocks/hero";
 @use "./blocks/about";
+@use "./blocks/contacts";
 @use "./blocks/menu";
 @use "./blocks/brands";

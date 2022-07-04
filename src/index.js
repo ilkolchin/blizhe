@@ -4,3 +4,4 @@ import "sanitize.css/typography.css";
 import "./styles/main.scss";
 
 import "./scripts/signUp__btn";
+import './scripts/animations'
