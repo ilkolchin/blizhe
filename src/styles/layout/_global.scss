@@ -16,6 +16,7 @@ body {
   background: $primaryColor;
   font-family: "IBM Plex Serif", serif;
   color: $baseTextColor;
+  overflow-x: hidden;
 }
 
 a {

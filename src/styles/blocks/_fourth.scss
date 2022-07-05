@@ -1,0 +1,22 @@
+.fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__btn{
+  background-color: aqua;
+  }
+
+  &__hover{
+    width: 100vw;
+    left: 90%;
+    position: absolute;
+    background-color: red;
+    transition: all .4s;
+  }
+}
+
+.active{
+  left: 50%;
+}

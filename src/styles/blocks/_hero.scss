@@ -1,4 +1,5 @@
 @use "../variables/var" as *;
+@use "../layout/animista";
 
 .hero {
   display: flex;
@@ -17,11 +18,31 @@
     font-size: 6rem;
     font-style: italic;
     text-transform: uppercase;
-
   }
 
   &__text {
     font-size: 2rem;
     text-transform: uppercase;
+    display: flex;
+
+    &-item1 {
+      animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+      padding-right: 10px;
+    }
+    &-item2 {
+      animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.65s both;
+      padding-right: 10px;
+    }
+    &-item3 {
+      animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.80s both;
+      padding-right: 10px;
+    }
+    &-item4 {
+      animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.95s both;
+      padding-right: 10px;
+    }
+    &-item5 {
+      animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 1.1s both;
+    }
   }
 }
