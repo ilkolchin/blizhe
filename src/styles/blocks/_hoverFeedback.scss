@@ -1,0 +1,13 @@
+@use "../variables/var.scss" as *;
+
+.hoverFeedback {
+  position: absolute;
+  width: 100%;
+  left: 90%;
+  background-color: $secondaryColor;
+  transition: all .6s ease-in-out;
+
+  &.active {
+    left: 40%;
+  }
+}

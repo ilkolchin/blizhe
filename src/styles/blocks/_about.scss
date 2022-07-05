@@ -1,10 +1,12 @@
+@use "../variables/var" as *;
 @use "../layout/media.scss" as *;
-@use '../layout/animista';
+@use '../animations/animista';
 
 .about {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: $secondaryColor;
 
   &__wrapper {
     display: flex;

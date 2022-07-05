@@ -1,9 +1,11 @@
+@use "../variables/var" as *;
 @use "../layout/media.scss" as *;
 
 .contacts {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: $thirdColor;
 
   &__wrapper {
     display: flex;

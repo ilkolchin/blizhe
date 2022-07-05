@@ -1,0 +1,59 @@
+@use "../variables/var.scss" as *;
+@use "../layout/media.scss" as *;
+
+.feedback {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  width: 90%;
+  transition: all .6s ease-in-out;
+
+  &.active {
+    left: -50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding-top: 10%;
+    margin-left: 8%;
+    max-width: 60%;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    line-height: 7rem;
+
+    @include fullHD {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin-bottom: 3%;
+
+    @include fullHD {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    background-color: $primaryColor;
+    color: $baseTextColor;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
