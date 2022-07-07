@@ -5,15 +5,14 @@
   padding: 0 2%;
   font-size: 1.5rem;
   position: fixed;
+  left: 0;
   width: 100vw;
   z-index: 1000;
-  color: white;
+  opacity: 1;
+  transition: opacity 1s;
 
-
-  &__title:hover {
-    color: red;
-    transition: 150ms ease-in-out;
+  &.hidden {
+    left: 100%;
+    opacity: 0;
   }
 }
-
-
