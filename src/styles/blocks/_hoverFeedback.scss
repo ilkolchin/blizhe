@@ -1,13 +1,39 @@
 @use "../variables/var.scss" as *;
+@use "../layout/media.scss" as *;
 
 .hoverFeedback {
   position: absolute;
-  width: 100%;
-  left: 90%;
+  width: 50%;
+  left: 80%;
   background-color: $secondaryColor;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s;
 
   &.active {
-    left: 40%;
+    left: 50%;
+  }
+
+  &__content {
+    margin: 10% 8%;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    line-height: 7rem;
+
+    @include fullHD {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+
+    @include fullHD {
+      font-size: 1rem;
+    }
   }
 }

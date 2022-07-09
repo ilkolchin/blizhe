@@ -1,4 +1,4 @@
-const HeaderOnScrollChange = () => {
+const HeaderOnScrollDisapear = () => {
   const header = document.querySelector("header");
 
   document.addEventListener("scroll", () => {
@@ -10,4 +10,4 @@ const HeaderOnScrollChange = () => {
   });
 };
 
-HeaderOnScrollChange();
+HeaderOnScrollDisapear();
