@@ -5,4 +5,5 @@ import "./styles/main.scss";
 
 import "./scripts/header";
 import "./scripts/feedback";
-import './scripts/animations'
+import './scripts/animations';
+import './scripts/form';
