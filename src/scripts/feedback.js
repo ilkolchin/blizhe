@@ -2,29 +2,24 @@ const BtnActivation = () => {
   const btn = document.querySelector(".feedback__btn");
   const section = document.querySelector(".feedback");
   const hoverSection = document.querySelector(".hoverFeedback");
-  const span = document.querySelector(".feedback__btn-inner");
-  const svg = document.querySelector(".feedback__btn-icon");
+  const btnMobile = document.querySelector(".hoverFeedback__btn");
 
-  const handleClickOnBtn = () => {
+  const activeSection = (event) => {
     section.classList.add("active");
     hoverSection.classList.add("active");
+    event.stopPropagation();
   };
-  btn.addEventListener("click", handleClickOnBtn);
 
-  const handleClickOnSection = (event) => {
-    console.log(event.target);
-    if (event.target === btn || event.target === span || event.target === svg)
-      return;
+  btn.addEventListener("click", activeSection);
+  hoverSection.addEventListener("click", activeSection);
+
+  const disActivateSection = (event) => {
     section.classList.remove("active");
     hoverSection.classList.remove("active");
+    event.stopPropagation();
   };
-  section.addEventListener("click", handleClickOnSection);
-
-  const handleClickOnHoverSection = () => {
-    section.classList.add("active");
-    hoverSection.classList.add("active");
-  };
-  hoverSection.addEventListener("click", handleClickOnHoverSection);
+  section.addEventListener("click", disActivateSection);
+  btnMobile.addEventListener("click", disActivateSection);
 };
 
 BtnActivation();

@@ -1,6 +1,6 @@
 @use "../variables/var" as *;
 @use "../layout/media.scss" as *;
-@use '../animations/animista';
+@use "../animations/animista";
 
 .about {
   display: flex;
@@ -11,16 +11,28 @@
   &__wrapper {
     display: flex;
     margin: 8%;
+
+    @include phones {
+      margin: 5%;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__text {
     flex: 1;
     margin-right: 10%;
+
+    @include phones {
+      margin-right: 0%;
+    }
   }
 
   &__title {
@@ -28,10 +40,17 @@
     font-weight: bold;
     margin-bottom: 5%;
     line-height: 7rem;
+    padding-right: 40%;
 
     @include fullHD {
       font-size: 4rem;
       line-height: 5rem;
+    }
+
+    @include phones {
+      font-size: 4rem;
+      line-height: 5rem;
+      padding-right: 0;
     }
   }
 
@@ -50,12 +69,19 @@
 
   &__image {
     height: 55rem;
+    width: 41rem;
     display: flex;
     justify-content: center;
     align-self: center;
 
     @include fullHD {
       height: 40rem;
+      width: 30rem;
+    }
+
+    @include phones {
+      height: 25rem;
+      width: 25rem;
     }
   }
 }

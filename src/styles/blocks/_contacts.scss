@@ -10,6 +10,10 @@
   &__wrapper {
     display: flex;
     margin: 8%;
+
+    @include phones{
+      margin: 5%;
+    }
   }
 
   &__content {
@@ -20,6 +24,10 @@
   &__text {
     flex: 1;
     margin-right: 10%;
+
+    @include phones{
+      margin: 0%;
+    }
   }
 
   &__title {

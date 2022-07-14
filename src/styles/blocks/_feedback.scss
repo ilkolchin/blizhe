@@ -8,6 +8,10 @@
   width: 80%;
   transition: all 0.6s;
 
+  @include phones {
+    width: 100%;
+  }
+
   &.active {
     left: -30%;
   }
@@ -21,6 +25,11 @@
     margin-top: 10%;
     margin-left: 8%;
     max-width: 60%;
+
+    @include phones {
+      max-width: 100%;
+      margin-right: 8%;
+    }
   }
 
   &__title {
@@ -61,7 +70,7 @@
       }
 
       .feedback__btn-inner::after {
-        border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
+        border-bottom: 2px solid rgba(34, 35, 34, 100%);
       }
     }
 
@@ -75,7 +84,7 @@
         width: 100%;
         position: absolute;
         top: 80%;
-        border-bottom: 2.5px solid rgba(34, 35, 34, 0%);
+        border-bottom: 2px solid rgba(34, 35, 34, 00%);
         transition: all 0.4s;
       }
     }

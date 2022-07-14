@@ -65,6 +65,10 @@ module.exports = {
       filename: "about.html",
       template: "./src/about.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "other.html",
+      template: "./src/other.html",
+    }),
   ],
 
   devtool: "source-map",

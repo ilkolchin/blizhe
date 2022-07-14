@@ -1,8 +1,10 @@
+@use "../layout/media.scss" as *;
+
 .header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 2% 3%;
   font-size: 1.5rem;
   position: fixed;
   left: 0;
@@ -10,6 +12,11 @@
   z-index: 1000;
   opacity: 1;
   transition: opacity 1s;
+
+  @include phones {
+    font-size: 2rem;
+    padding: 2% 5%;
+  }
 
   &.hidden {
     left: 100%;
