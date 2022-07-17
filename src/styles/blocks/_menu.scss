@@ -1,43 +1,52 @@
+@use "../variables/var.scss" as *;
 @use "../layout/media.scss" as *;
 
 .menu {
-  &__side {
-    display: none;
-    font-size: 2.5rem;
+  &__list {
+    display: flex;
 
     @include phones {
-      display: block;
+      display: none;
     }
   }
-}
 
-.menu__list {
-  display: flex;
+  &__option {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 15px;
+    border-bottom: 2.5px solid rgba(34, 35, 34, 0);
+    border-radius: 2px;
+    transition: all 0.4s;
 
-  @include phones {
-    display: none;
-  }
-}
+    &.active {
+      color: rgba(34, 35, 34, 100%);
+      border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
+    }
 
-.menu__option {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-right: 15px;
-  border-bottom: 2.5px solid rgba(34, 35, 34, 0);
-  border-radius: 2px;
-  transition: all 0.4s;
+    &:last-child {
+      margin-right: 0;
+    }
 
-  &.active {
-    color: rgba(34, 35, 34, 100%);
-    border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
-  }
-
-  &:last-child {
-    margin-right: 0;
+    &:hover {
+      color: rgba(34, 35, 34, 100%);
+      border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
+    }
   }
 
-  &:hover {
-    color: rgba(34, 35, 34, 100%);
-    border-bottom: 2.5px solid rgba(34, 35, 34, 100%);
+  &--vertical {
+    .menu__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      background-color: $primaryColor;
+    }
+
+    .menu__option {
+      font-size: 4.5rem;
+      margin-right: 0;
+    }
   }
 }

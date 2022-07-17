@@ -7,6 +7,9 @@
   left: 80%;
   background-color: $secondaryColor;
   transition: all 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include phones {
     width: 100%;
@@ -22,12 +25,7 @@
   }
 
   &__content {
-    margin: 10% 8%;
-
-    @include phones {
-      margin: 5%;
-      margin-top: 10%;
-    }
+    margin: 0 8%;
   }
 
   &__title {
@@ -62,21 +60,17 @@
 
   &__btn {
     display: none;
-    font-size: 1.6rem;
-    border-radius: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.8);
-    padding: 0.15rem 0.5rem;
     position: absolute;
-    top: 2%;
-    right: 5%;
+    top: 9%;
+    right: 0;
 
     @include phones {
       display: block;
     }
 
     &-svg {
-      width: 44px;
-      height: 44px;
+      width: 60px;
+      height: 60px;
     }
   }
 }

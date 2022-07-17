@@ -22,6 +22,11 @@ body {
   font-family: "IBM Plex Serif", serif;
   color: $baseTextColor;
   overflow-x: hidden;
+
+  &.locked {
+    touch-action: none;
+    -ms-touch-action: none;
+  }
 }
 
 a {

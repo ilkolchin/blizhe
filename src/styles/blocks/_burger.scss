@@ -1,0 +1,65 @@
+@use "../variables/var" as *;
+@use "../layout/media.scss" as *;
+
+.burger {
+  display: none;
+
+  @include phones {
+    display: inline-flex;
+  }
+}
+
+.burger__icon {
+  width: 30px;
+  height: 3px;
+  position: relative;
+  transition-duration: 1s;
+}
+.burger__icon span {
+  height: 3px;
+  width: 30px;
+  background-color: $baseTextColor;
+  border-radius: 20px;
+  position: absolute;
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+}
+.burger__icon span:before {
+  left: 0;
+  position: absolute;
+  top: 10px;
+  height: 3px;
+  width: 30px;
+  background-color: $baseTextColor;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+.burger__icon span:after {
+  left: 0;
+  position: absolute;
+  top: -10px;
+  height: 3px;
+  width: 30px;
+  background-color: $baseTextColor;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+.burger__icon.open span {
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  background: transparent;
+}
+.burger__icon.open span:before {
+  transition: top 0.25s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(-45deg);
+}
+.burger__icon.open span:after {
+  transition: top 0.4s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(45deg);
+}

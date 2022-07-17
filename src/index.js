@@ -7,3 +7,4 @@ import "./scripts/header";
 import "./scripts/feedback";
 import './scripts/animations';
 import './scripts/form';
+import './scripts/burger';
