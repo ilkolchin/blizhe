@@ -2,7 +2,6 @@
 @use "../animations/animista";
 @use "../layout/media.scss" as *;
 
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -26,35 +25,63 @@
     text-transform: uppercase;
     animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.61, 0.355, 1)
       0.5s both;
+
+    @include phones {
+      animation: none;
+    }
   }
 
   &__text {
     font-size: 2rem;
     text-transform: uppercase;
     display: flex;
-    
-    @include phones{
+
+    @include phones {
       font-size: 1.3rem;
     }
 
     &-item1 {
       animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s+0.8s both;
       padding-right: 10px;
+
+      @include phones {
+        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s both;
+      }
     }
+
     &-item2 {
       animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s+0.95s both;
       padding-right: 10px;
+
+      @include phones {
+        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.95s both;
+      }
     }
+
     &-item3 {
       animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s+1.1s both;
       padding-right: 10px;
+
+      @include phones {
+        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 1.1s both;
+      }
     }
+
     &-item4 {
       animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s+1.25s both;
       padding-right: 10px;
+
+      @include phones {
+        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 1.25s both;
+      }
     }
+
     &-item5 {
       animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s+1.3s both;
+
+      @include phones {
+        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 1.3s both;
+      }
     }
   }
 }

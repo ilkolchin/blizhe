@@ -1,9 +1,10 @@
-.section {
-  min-height: 100vh;
-  overflow: hidden;
-}
+@use "../layout/media.scss" as *;
 
 .container {
-  width: 95%;
-  margin: 0 auto;
+  @include phones {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 }

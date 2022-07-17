@@ -5,12 +5,12 @@
 .about {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   background-color: $secondaryColor;
 
   &__wrapper {
     display: flex;
-    margin: 8%;
+    margin: 0 10%;
 
     @include phones {
       margin: 5%;

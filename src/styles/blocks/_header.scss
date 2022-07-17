@@ -1,4 +1,5 @@
 @use "../layout/media.scss" as *;
+@use "../variables/var.scss" as *;
 
 .header {
   display: flex;
@@ -16,6 +17,7 @@
   @include phones {
     font-size: 2rem;
     padding: 2% 5%;
+    background-color: $primaryColor;
   }
 
   &.hidden {

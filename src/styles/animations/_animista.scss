@@ -10,7 +10,7 @@
 }
 
 .slide-in-br {
-  animation: slide-in-br 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation: slide-in-br 1.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 @keyframes slide-in-fwd-center {
@@ -29,11 +29,11 @@
     both;
 }
 .slide-in-fwd-center-2 {
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s
     both;
 }
 .slide-in-fwd-center-3 {
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s
     both;
 }
 
