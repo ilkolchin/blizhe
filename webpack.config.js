@@ -2,6 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ExcludeAssetsPlugin = require("@ianwalter/exclude-assets-plugin");
 
 let mode = "development";
 
@@ -60,15 +61,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
+      // excludeAssets: [/feedback.js/gm],
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       template: "./src/about.html",
+      // excludeAssets: [/\.js/],
     }),
     new HtmlWebpackPlugin({
       filename: "other.html",
       template: "./src/other.html",
     }),
+    new ExcludeAssetsPlugin(),
   ],
 
   devtool: "source-map",

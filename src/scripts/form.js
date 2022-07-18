@@ -1,4 +1,6 @@
-const form = () => {
+const Form = () => {
+  if (window.location.pathname !== "/") return;
+
   const btn = document.querySelector(".form__input--btn");
 
   const handleClick = (event) => {
@@ -8,4 +10,4 @@ const form = () => {
   btn.addEventListener("click", handleClick);
 };
 
-form();
+Form();
