@@ -14,7 +14,7 @@ const Observer = new IntersectionObserver((entries) => {
 
 const ObserverCheck = () => {
   if (window.location.pathname !== "/") return;
-  Observer.observe(document.querySelector(".contacts__wrapper"));
+  Observer.observe(img1);
 };
 
 ObserverCheck();

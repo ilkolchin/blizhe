@@ -50,10 +50,10 @@
       position: relative;
       width: 100%;
       text-align: center;
+      border: none;
 
       &.open {
-        &::after,
-        &::before {
+        &::after {
           left: 0;
           transition: left 1s ease-in-out 350ms;
         }
@@ -69,15 +69,15 @@
         background-color: $baseTextColor;
       }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 2px;
-        background-color: $baseTextColor;
-      }
+      // &::before {
+      //   // content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 100%;
+      //   width: 100%;
+      //   height: 1px;
+      //   background-color: $baseTextColor;
+      // }
     }
   }
 }

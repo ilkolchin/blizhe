@@ -69,8 +69,12 @@ module.exports = {
       // excludeAssets: [/\.js/],
     }),
     new HtmlWebpackPlugin({
-      filename: "other.html",
-      template: "./src/other.html",
+      filename: "contacts.html",
+      template: "./src/contacts.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "faq.html",
+      template: "./src/faq.html",
     }),
     new ExcludeAssetsPlugin(),
   ],

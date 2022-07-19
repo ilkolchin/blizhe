@@ -14,6 +14,11 @@
   opacity: 1;
   transition: opacity 1s;
 
+  &__subtitle{
+    display: flex;
+    align-items: center;
+  }
+
   @include phones {
     font-size: 2rem;
     padding: 0% 5%;
