@@ -7,5 +7,6 @@ import "./scripts/fullscreenmenu";
 import "./scripts/header";
 import "./scripts/aboutSection";
 import "./scripts/contactsSection";
-import "./scripts/feedback";
+import "./scripts/feedbackSection";
 import "./scripts/form";
+import "./scripts/faqSection";

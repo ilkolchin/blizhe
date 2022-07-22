@@ -3,7 +3,7 @@
 @use "./layout/container";
 @use "./layout/section";
 
-//blocks
+//blocks (main page)
 @use "./blocks/header";
 @use "./blocks/hero";
 @use "./blocks/about";
@@ -15,3 +15,8 @@
 @use "./blocks/form";
 @use "./blocks/burger";
 @use "./blocks/fullscreenmenu";
+
+//faq
+
+@use "./blocks/faq";
+@use "./blocks/questions";

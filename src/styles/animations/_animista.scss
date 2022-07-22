@@ -23,7 +23,7 @@
 }
 
 .slide-in-br {
-  animation: slide-in-br 1.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation: slide-in-br 1s cubic-bezier(0.47, 0, 0.745, 0.715);
 
   @include phones {
     animation: slide-in-br-mobile 1s cubic-bezier(0.47, 0, 0.745, 0.715);

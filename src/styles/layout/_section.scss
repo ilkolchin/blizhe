@@ -1,3 +1,6 @@
+@use "../variables/var.scss" as *;
+
 .section {
   min-height: 100vh;
+  z-index: $section;
 }

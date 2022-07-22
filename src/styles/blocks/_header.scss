@@ -10,20 +10,24 @@
   position: fixed;
   left: 0;
   width: 100vw;
-  z-index: 1000;
+  z-index: $header;
   opacity: 1;
   transition: opacity 1s;
-
-  &__subtitle{
-    display: flex;
-    align-items: center;
-  }
 
   @include phones {
     font-size: 2rem;
     padding: 0% 5%;
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
     align-items: stretch;
+  }
+
+  &__subtitle {
+    display: none;
+    align-items: center;
+
+    @include phones {
+      display: flex;
+    }
   }
 
   &.hidden {
