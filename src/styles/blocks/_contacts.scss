@@ -14,7 +14,7 @@
 
     @include phones {
       position: relative;
-      margin: 5%;
+      margin: 10% 5%;
     }
   }
 
@@ -41,22 +41,32 @@
 
   &__title {
     font-size: 6rem;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 5%;
-    line-height: 7rem;
+    line-height: 6rem;
 
     @include fullHD {
       font-size: 4rem;
-      line-height: 5rem;
+      line-height: 4rem;
+    }
+
+    @include phones {
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+      letter-spacing: -5px;
+      padding-right: 0;
+      text-align: left;
     }
   }
 
   &__paragraph {
     font-size: 2rem;
     margin-bottom: 1%;
+    line-height: 1.16;
+    letter-spacing: -0.01em;
 
-    @include fullHD {
-      font-size: 1.6rem;
+    @include phones {
+      font-weight: 700;
     }
 
     &:last-of-type {
@@ -77,7 +87,7 @@
       width: 10rem;
       height: 12rem;
       position: absolute;
-      bottom: 15%;
+      bottom: 13%;
       left: 35%;
     }
   }

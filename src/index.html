@@ -154,7 +154,7 @@
               базы.
             </p>
             <div class="hoverFeedback__form">
-              <form class="form">
+              <form class="form" id="form">
                 <label for="name" class="form__line">
                   <input
                     type="text"
@@ -162,6 +162,9 @@
                     id="name"
                     placeholder="Имя"
                     class="form__input"
+                    required
+                    minlength="2"
+                    maxlength="15"
                   />
                 </label>
                 <label for="email" class="form__line">
@@ -171,6 +174,8 @@
                     id="email"
                     placeholder="Email"
                     class="form__input"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    required
                   />
                 </label>
                 <label for="tel" class="form__line">
@@ -179,7 +184,9 @@
                     name="tel"
                     id="tel"
                     placeholder="Ваш телефон"
-                    class="form__input"
+                    class="form__input form__input--tel"
+                    required
+                    pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                   />
                 </label>
                 <div class="form__line">

@@ -9,4 +9,5 @@ import "./scripts/aboutSection";
 import "./scripts/contactsSection";
 import "./scripts/feedbackSection";
 import "./scripts/form";
+import "./scripts/mask";
 import "./scripts/faqSection";

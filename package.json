@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.15.4",
+    "@emailjs/browser": "^3.6.2",
+    "imask": "^6.4.2",
     "sanitize.css": "^13.0.0"
   }
 }
