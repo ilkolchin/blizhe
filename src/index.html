@@ -42,11 +42,15 @@
         <div class="hero__content">
           <h1 class="hero__title">Blizhe</h1>
           <ul class="hero__text">
-            <li class="hero__text-item1"><span>Personal</span></li>
-            <li class="hero__text-item2"><span>Shopping</span></li>
+            <div class="hero__text-mobile">
+              <li class="hero__text-item1"><span>Personal</span></li>
+              <li class="hero__text-item2"><span>Shopping</span></li>
+            </div>
             <li class="hero__text-item3"><span>&</span></li>
-            <li class="hero__text-item4"><span>Fashion</span></li>
-            <li class="hero__text-item5"><span>Concierge</span></li>
+            <div class="hero__text-mobile">
+              <li class="hero__text-item4"><span>Fashion</span></li>
+              <li class="hero__text-item5"><span>Concierge</span></li>
+            </div>
           </ul>
         </div>
       </section>
@@ -87,7 +91,7 @@
                 Также как синтетическое тестирование создаёт предпосылки для
                 соответствующих условий активизации.
               </p>
-              <p class="contacts__paragraph">
+              <p class="contacts__paragraph" data-contacts="animation">
                 Но представители современных социальных резервов набирают
                 популярность среди определенных слоев населения.
               </p>
@@ -164,7 +168,7 @@
                     class="form__input"
                     required
                     minlength="2"
-                    maxlength="15"
+                    maxlength="40"
                   />
                 </label>
                 <label for="email" class="form__line">
@@ -174,7 +178,7 @@
                     id="email"
                     placeholder="Email"
                     class="form__input"
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
                     required
                   />
                 </label>

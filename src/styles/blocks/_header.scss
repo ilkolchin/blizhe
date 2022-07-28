@@ -3,9 +3,9 @@
 
 .header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding: 2% 3%;
+  padding: 0% 3%;
   font-size: 1.5rem;
   position: fixed;
   left: 0;
@@ -13,6 +13,10 @@
   z-index: $header;
   opacity: 1;
   transition: opacity 1s;
+
+  &__title {
+    font-size: 4rem;
+  }
 
   @include phones {
     font-size: 2rem;

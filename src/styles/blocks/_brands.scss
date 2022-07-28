@@ -26,9 +26,11 @@
     margin-bottom: 1rem;
 
     @include phones {
-      font-size: 3rem;
-      line-height: 3.4rem;
-      margin-bottom: 5%;
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+      letter-spacing: -5px;
+      text-align: left;
+      margin: 5%;
     }
   }
 
@@ -37,7 +39,9 @@
     text-align: center;
 
     @include phones {
-      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 10%;
     }
   }
 
@@ -47,6 +51,13 @@
     background: url(../img/all_brands_LOLS.png) no-repeat;
     animation: marquee 25s linear infinite;
 
+    @include phones {
+      width: 1185px;
+      height: 350px;
+      background: url(../img/all_brands_h-350.png);
+      animation: marquee 15s linear infinite;
+    }
+
     &::before {
       content: "";
       width: 1920px;
@@ -54,6 +65,12 @@
       position: absolute;
       left: 100%;
       background: url(../img/all_brands_LOLS.png) no-repeat;
+
+      @include phones {
+        width: 1185px;
+        height: 350px;
+        background: url(../img/all_brands_h-350.png);
+      }
     }
     &::after {
       content: "";
@@ -62,6 +79,12 @@
       position: absolute;
       left: 200%;
       background: url(../img/all_brands_LOLS.png) no-repeat;
+
+      @include phones {
+        width: 1185px;
+        height: 350px;
+        background: url(../img/all_brands_h-350.png);
+      }
     }
   }
 }

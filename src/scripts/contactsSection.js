@@ -1,3 +1,4 @@
+const block = document.querySelector(".contacts__text").children[2];
 const img1 = document.querySelector(".contacts__img");
 const img2 = document.querySelector(".contacts__images-img1");
 const img3 = document.querySelector(".contacts__images-img2");
@@ -14,7 +15,7 @@ const Observer = new IntersectionObserver((entries) => {
 
 const ObserverCheck = () => {
   if (window.location.pathname !== "/") return;
-  Observer.observe(img1);
+  Observer.observe(block);
 };
 
 ObserverCheck();
