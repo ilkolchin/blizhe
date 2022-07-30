@@ -2,8 +2,6 @@
 @use "../layout/media.scss" as *;
 
 .menu {
-  font-size: inherit;
-  font-weight: 900;
   padding-top: 30px;
 
   @include phones {

@@ -11,3 +11,4 @@ import "./scripts/feedbackSection";
 import "./scripts/form";
 import "./scripts/mask";
 import "./scripts/faqSection";
+import "./scripts/hoverfeedbackSection";

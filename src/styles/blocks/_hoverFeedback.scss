@@ -50,10 +50,6 @@
     font-size: 1.6rem;
     margin-bottom: 3%;
 
-    @include fullHD {
-      font-size: 1rem;
-    }
-
     @include phones {
       font-size: 1.5rem;
     }
@@ -72,6 +68,12 @@
     &-svg {
       width: 60px;
       height: 60px;
+      opacity: 0;
+      transition: all 0.4s .5s;
+
+      &.active {
+        opacity: 1;
+      }
     }
   }
 }
