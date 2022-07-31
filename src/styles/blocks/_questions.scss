@@ -72,16 +72,12 @@
   &__text {
     font-size: 2rem;
     text-align: justify;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.4s;
+    transition: max-height 0.4s;
 
     &.open {
-      height: 11rem;
-
-      @include phones {
-        height: 28rem;
-      }
+      max-height: 28rem;
     }
 
     @include fullHD {
