@@ -1,13 +1,20 @@
 const HeaderScroll = () => {
   if (screen.width < 500) return;
 
-  const header = document.querySelector("header");
+  const AddHiddenClass = (height) => {
+    const header = document.querySelector("header");
+    if (window.scrollY > height) {
+      header.classList.add("hidden");
+    } else {
+      header.classList.remove("hidden");
+    }
+  };
 
   document.addEventListener("scroll", () => {
-    if (window.scrollY > 5000) {
-      header.classList.add("hidden");
-    } else if (window.scrollY < 5000) {
-      header.classList.remove("hidden");
+    if (document.documentElement.scrollHeight > 7000) {
+      AddHiddenClass(6700);
+    } else {
+      AddHiddenClass(5000);
     }
   });
 };

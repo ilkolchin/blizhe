@@ -3,6 +3,7 @@
 
 .menu {
   padding-top: 30px;
+  font-weight: bold;
 
   @include phones {
     padding-top: 12px;

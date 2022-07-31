@@ -22,6 +22,28 @@
   }
 }
 
+@keyframes slide-in-bl {
+  0% {
+    transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bl-mobile {
+  0% {
+    transform: translateY(350px) translateX(-350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
 .slide-in-br {
   animation: slide-in-br 1s cubic-bezier(0.47, 0, 0.745, 0.715);
 
@@ -30,28 +52,12 @@
   }
 }
 
-@keyframes slide-in-fwd-center {
-  0% {
-    transform: perspective(400px) rotateY(0deg) translateZ(-1400px);
-    opacity: 0;
-  }
-  100% {
-    transform: perspective(400px) rotateY(0deg) translateZ(0);
-    opacity: 1;
-  }
-}
+.slide-in-bl {
+  animation: slide-in-bl 1s cubic-bezier(0.47, 0, 0.745, 0.715);
 
-.slide-in-fwd-center {
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
-    both;
-}
-.slide-in-fwd-center-2 {
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s
-    both;
-}
-.slide-in-fwd-center-3 {
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s
-    both;
+  @include phones {
+    animation: slide-in-bl-mobile 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
 }
 
 @keyframes fade-in {

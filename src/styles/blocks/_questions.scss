@@ -2,53 +2,16 @@
 
 .question {
   position: relative;
+  margin-bottom: 2%;
 
   &__title {
     font-size: 4rem;
     padding-left: 7%;
-    margin-bottom: 2%;
     cursor: pointer;
     position: relative;
 
     @include phones {
       padding-left: 15%;
-    }
-
-    &.open {
-      &::after {
-        width: 100%;
-      }
-
-      &:hover {
-        &::after {
-          width: 100%;
-        }
-      }
-    }
-
-    &::after {
-      content: "";
-      width: 0%;
-      height: 2px;
-      background: black;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: width 650ms cubic-bezier(1, 0.99, 0.37, 1.31);
-
-      @include phones {
-        transition: width 650ms ease-in-out;
-      }
-    }
-
-    &:hover {
-      &::after {
-        width: 50%;
-
-        @include phones {
-          width: 0;
-        }
-      }
     }
 
     &-svg {
