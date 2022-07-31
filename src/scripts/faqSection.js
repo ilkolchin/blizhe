@@ -1,11 +1,8 @@
 const titles = document.querySelectorAll(".question__title");
 
 const ToggleText = (event) => {
-  const children = event.composedPath()[1].children;
-
-  for (const child of children) {
-    child.classList.toggle("open");
-  }
+  const block = event.composedPath()[2];
+  block.classList.toggle("open");
 };
 
 titles.forEach((element) => {

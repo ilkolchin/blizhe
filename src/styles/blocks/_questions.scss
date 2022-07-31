@@ -1,30 +1,67 @@
 @use "../layout/media.scss" as *;
+@use "../variables/var" as *;
+
+.questions__item {
+  margin-bottom: 1%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    margin-bottom: 2%;
+  }
+}
 
 .question {
-  position: relative;
-  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $baseTextColor;
+  border-radius: 25px;
+  padding: 1% 3%;
 
-  &__title {
-    font-size: 4rem;
-    padding-left: 7%;
-    cursor: pointer;
-    position: relative;
+  &.open {
+    .question__title {
+      &__text {
+        color: rgb(66 137 162);
+      }
 
-    @include phones {
-      padding-left: 15%;
+      &__svg {
+        transform: rotate(-90deg);
+        fill: rgb(66 137 162);
+      }
     }
 
-    &-svg {
-      width: 5rem;
-      height: 5rem;
-      position: absolute;
-      left: 0;
-      top: 16px;
+    .question__content {
+      transition: max-height 2s;
+      max-height: 28rem;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &__text {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      letter-spacing: -0.05em;
+      position: relative;
+      flex: 1;
       transition: all 0.4s;
 
-      &.open {
-        transform: rotate(90deg);
+      @include phones {
+        padding-left: 5%;
       }
+    }
+
+    &__svg {
+      width: 4rem;
+      height: 4rem;
+      transform: rotate(90deg);
+      transition: all 0.4s;
 
       @include phones {
         top: 8px;
@@ -32,19 +69,13 @@
     }
   }
 
-  &__text {
-    font-size: 2rem;
+  &__content {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    letter-spacing: -0.03em;
     text-align: justify;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s;
-
-    &.open {
-      max-height: 28rem;
-    }
-
-    @include fullHD {
-      font-size: 1.6rem;
-    }
   }
 }
