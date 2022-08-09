@@ -5,7 +5,7 @@
 
   &__content {
     margin: 0 10%;
-    padding-top: 10%;
+    padding-top: 6%;
 
     @include phones {
       margin: 20% 5% 0 5%;
@@ -14,8 +14,28 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     font-size: 2.5rem;
     line-height: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+
+    @include phones {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__link {
+    margin: 0% 1%;
+    color: rgb(66 137 162);
   }
 }

@@ -14,7 +14,7 @@ const HeaderScroll = () => {
     if (document.documentElement.scrollHeight > 7000) {
       AddHiddenClass(6700);
     } else {
-      AddHiddenClass(5000);
+      AddHiddenClass(4500);
     }
   });
 };

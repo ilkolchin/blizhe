@@ -6,7 +6,7 @@
 //blocks (main page)
 @use "./blocks/header";
 @use "./blocks/hero";
-@use "./blocks/about";
+@use "./blocks/info";
 @use "./blocks/contacts";
 @use "./blocks/menu";
 @use "./blocks/brands";
@@ -20,3 +20,7 @@
 
 @use "./blocks/faq";
 @use "./blocks/questions";
+
+//about
+
+@use "./blocks/about";

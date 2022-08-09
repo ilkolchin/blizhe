@@ -1,4 +1,4 @@
-const img = document.querySelector(".about__image");
+const img = document.querySelector(".info__image");
 
 const AboutObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -10,7 +10,7 @@ const AboutObserver = new IntersectionObserver((entries) => {
 
 const ObserverCheck = () => {
   if (window.location.pathname !== "/") return;
-  AboutObserver.observe(document.querySelector(".about__paragraph"));
+  AboutObserver.observe(document.querySelector(".info__paragraph"));
 };
 
 ObserverCheck();

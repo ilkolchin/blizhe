@@ -5,7 +5,7 @@ import "./styles/main.scss";
 
 import "./scripts/fullscreenmenu";
 import "./scripts/header";
-import "./scripts/aboutSection";
+import "./scripts/infoSection";
 import "./scripts/contactsSection";
 import "./scripts/feedbackSection";
 import "./scripts/form";
