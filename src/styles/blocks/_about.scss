@@ -1,12 +1,21 @@
 @use "../variables/var.scss" as *;
+@use "../layout/media.scss" as *;
 
 .about {
   display: flex;
   min-height: 65vh;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__first {
     min-height: 75vh;
     position: relative;
+
+    @include phones {
+      min-height: 130vh;
+    }
   }
 
   &__owner {
@@ -45,11 +54,25 @@
 
     &-flex--end {
       justify-content: flex-end;
+
+      @include phones {
+        justify-content: center;
+      }
+    }
+
+    @include phones {
+      &.story--mobile {
+        background-color: $blue;
+      }
     }
   }
 
   &__content {
     padding: 10% 25%;
+
+    @include phones {
+      padding: 10% 5%;
+    }
   }
 
   &__title {
@@ -59,6 +82,11 @@
     &-pos--rotate {
       writing-mode: vertical-lr;
       transform: rotate(180deg);
+
+      @include phones {
+        writing-mode: unset;
+        transform: none;
+      }
     }
 
     &-size--smaller {
@@ -68,6 +96,11 @@
 
     &-pos--moved {
       margin-right: -7%;
+
+      @include phones {
+        margin-right: 0;
+        font-size: 4rem;
+      }
     }
   }
 
@@ -78,6 +111,11 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    @include phones {
+      font-size: 1.7rem;
+      line-height: 2.8rem;
     }
 
     &-color {
@@ -97,17 +135,42 @@
     background-size: contain;
     background-attachment: fixed;
 
+    @include phones {
+      background-attachment: unset;
+    }
+
     &__first {
       background-image: url(../img/paris-fashion-week-1-1.jpg);
       background-position: 140%;
+
+      @include phones {
+        flex: none;
+        height: 70vh;
+        background-size: cover;
+        background-position: 50%;
+      }
     }
 
     &__second {
       background-image: url(../img/475315019.jpg);
+
+      @include phones {
+        flex: none;
+        height: 50vh;
+        background-size: cover;
+        background-position: unset;
+      }
     }
 
     &__third {
       background-image: url(../img/ezgif-1-5bab71eb5c.jpg);
+
+      @include phones {
+        flex: none;
+        height: 70vh;
+        background-size: cover;
+        background-position: 50%;
+      }
     }
   }
 
@@ -117,6 +180,10 @@
     height: 100%;
     justify-content: space-around;
     align-items: center;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__member {
@@ -125,6 +192,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include phones {
+      margin-bottom: 10%;
+    }
 
     &__avatar {
       width: 15rem;

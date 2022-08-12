@@ -3,9 +3,16 @@
 
 .burger {
   display: none;
+  padding-top: 34px;
 
   @include phones {
     display: inline-flex;
+  }
+
+  .header-color--white &__icon span,
+  .header-color--white &__icon span:before,
+  .header-color--white &__icon span:after {
+    background-color: $white;
   }
 }
 

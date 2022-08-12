@@ -4,15 +4,6 @@
 .fullscreenmenu {
   display: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 7%;
-    width: 100%;
-    height: 1px;
-    background: black;
-  }
-
   @include phones {
     display: block;
     position: fixed;

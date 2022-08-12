@@ -41,5 +41,9 @@
 
   &-color--white {
     color: $white;
+
+    @include phones {
+      background-color: initial;
+    }
   }
 }
