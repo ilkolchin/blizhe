@@ -38,11 +38,8 @@
     @include phones {
       font-size: 2.5rem;
       letter-spacing: -0.01em;
-      flex-direction: column;
-    }
-
-    &-mobile {
-      display: flex;
+      width: 85%;
+      flex-wrap: wrap;
       justify-content: center;
     }
 
@@ -73,8 +70,6 @@
 
       @include phones {
         display: none;
-        animation: fade-in 0s cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s +
-          (2 * 150ms) both;
       }
     }
 

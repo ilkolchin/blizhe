@@ -8,22 +8,14 @@
   justify-content: center;
   background-color: $pink;
 
-  &__wrapper {
-    display: flex;
-    margin: 0 10%;
-    padding: 12% 0;
-
-    @include phones {
-      margin: 10% 5%;
-    }
-  }
-
   &__content {
     display: flex;
     align-items: center;
+    margin: 0 10%;
 
     @include phones {
       flex-direction: column;
+      margin: 0 5%;
     }
   }
 
@@ -86,6 +78,31 @@
     @include phones {
       height: 25rem;
       width: 25rem;
+    }
+  }
+
+  &__blue {
+    background-color: $blue;
+
+    .info__content {
+      flex-direction: row-reverse;
+
+      @include phones {
+        flex-direction: column;
+      }
+    }
+
+    .info__text {
+      margin-right: 0;
+      margin-left: 10%;
+
+      @include phones {
+        margin-left: 0%;
+      }
+    }
+
+    .info__image.slide-in-bl {
+      opacity: 1;
     }
   }
 }

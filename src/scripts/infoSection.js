@@ -1,16 +1,22 @@
-const img = document.querySelector(".info__image");
+const texts = document.querySelectorAll(".info__text");
 
-const AboutObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+const Observer = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
     if (entry.isIntersecting) {
-      img.classList.add("slide-in-br");
+      if (entry.target.nextElementSibling.children[0].alt === "SuckmyRouge") {
+        entry.target.nextElementSibling.classList.add("slide-in-br");
+      } else {
+        entry.target.nextElementSibling.classList.add("slide-in-bl");
+      }
     }
-  });
+  }
 });
 
-const ObserverCheck = () => {
+const PageCheck = () => {
   if (window.location.pathname !== "/") return;
-  AboutObserver.observe(document.querySelector(".info__paragraph"));
+  for (const text of texts) {
+    Observer.observe(text);
+  }
 };
 
-ObserverCheck();
+PageCheck();
