@@ -1,7 +1,9 @@
 @use "../layout/media.scss" as *;
+@use "../variables/var.scss" as *;
 
 .faq {
   display: flex;
+  background-color: $blue;
 
   &__content {
     margin: 0 10%;

@@ -3,17 +3,19 @@
 @use "./layout/section";
 @use "./layout/container";
 
-//blocks (main page)
+//common
 @use "./blocks/header";
+@use "./blocks/menu";
+@use "./blocks/burger";
+@use "./blocks/fullscreenmenu";
+
+//blocks (main page)
 @use "./blocks/hero";
 @use "./blocks/info";
-@use "./blocks/menu";
 @use "./blocks/brands";
 @use "./blocks/feedback";
 @use "./blocks/hoverFeedback";
 @use "./blocks/form";
-@use "./blocks/burger";
-@use "./blocks/fullscreenmenu";
 
 //faq
 
@@ -23,3 +25,7 @@
 //about
 
 @use "./blocks/about";
+
+//contacts
+
+@use "./blocks/contacts";

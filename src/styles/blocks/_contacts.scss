@@ -1,0 +1,28 @@
+@use "../variables/var.scss" as *;
+
+.contacts {
+  display: flex;
+
+  &__musthead {
+    min-height: 65vh;
+    background-image: url(../img/ezgif-1-5bab71eb5c.jpg);
+    background-attachment: fixed;
+    background-position-y: 20%;
+    background-position-x: 40%;
+  }
+
+  &__block {
+    display: flex;
+    flex: 1;
+    margin: 0 25%;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    padding: 10% 0;
+  }
+}
