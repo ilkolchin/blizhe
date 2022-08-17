@@ -9,10 +9,16 @@
     display: inline-flex;
   }
 
-  .header-color--white &__icon span,
-  .header-color--white &__icon span:before,
-  .header-color--white &__icon span:after {
-    background-color: $white;
+  &__icon span,
+  &__icon span:after,
+  &__icon span:before {
+    .header-color--white & {
+      background-color: $white;
+    }
+
+    .locked & {
+      background-color: $baseFontColor;
+    }
   }
 }
 
@@ -25,7 +31,7 @@
 .burger__icon span {
   height: 3px;
   width: 30px;
-  background-color: $baseTextColor;
+  background-color: $baseFontColor;
   border-radius: 20px;
   position: absolute;
   transition-duration: 0.25s;
@@ -37,7 +43,7 @@
   top: 10px;
   height: 3px;
   width: 30px;
-  background-color: $baseTextColor;
+  background-color: $baseFontColor;
   content: "";
   border-radius: 20px;
   transition-duration: 0.25s;
@@ -49,7 +55,7 @@
   top: -10px;
   height: 3px;
   width: 30px;
-  background-color: $baseTextColor;
+  background-color: $baseFontColor;
   content: "";
   border-radius: 20px;
   transition-duration: 0.25s;

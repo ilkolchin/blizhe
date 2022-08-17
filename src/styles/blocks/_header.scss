@@ -39,11 +39,21 @@
     left: 100%;
   }
 
-  &-color--white {
-    color: $white;
+  &-color {
+    &--white {
+      color: $white;
 
-    @include phones {
-      background-color: initial;
+      @include phones {
+        background-color: initial;
+      }
     }
+
+    &--transparent {
+      background-color: transparent;
+    }
+  }
+
+  .locked > & {
+    color: $baseFontColor;
   }
 }

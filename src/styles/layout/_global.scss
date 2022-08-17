@@ -18,14 +18,24 @@ body {
 }
 
 body {
-  background: $beige;
+  background-color: $beige;
   font-family: "IBM Plex Serif", serif;
-  color: $baseTextColor;
+  color: $baseFontColor;
   overflow-x: hidden;
+
+  &.background--color {
+    &-white {
+      background-color: $white;
+    }
+    &-pink {
+      background-color: $pink;
+    }
+  }
 
   &.locked {
     touch-action: none;
     -ms-touch-action: none;
+    background-color: $beige;
   }
 }
 
