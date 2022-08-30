@@ -29,6 +29,9 @@
     flex: 1;
 
     &-backgroundColor {
+      &--beige {
+        background-color: $beige;
+      }
       &--pink {
         background-color: $pink;
       }
@@ -62,7 +65,7 @@
 
     @include phones {
       &.story--mobile {
-        background-color: $blue;
+        background-color: $beige;
       }
     }
   }
@@ -164,6 +167,8 @@
 
     &__third {
       background-image: url(../img/ezgif-1-5bab71eb5c.jpg);
+      background-size: 75%;
+      background-position-y: 100px;
 
       @include phones {
         flex: none;

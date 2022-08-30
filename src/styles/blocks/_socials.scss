@@ -1,0 +1,60 @@
+@use "../layout/media.scss" as *;
+
+.socials {
+  font-size: 1.7rem;
+
+  &__item {
+    margin-bottom: 3%;
+    padding-left: 6%;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include phones {
+      padding-left: 10%;
+    }
+
+    &__link {
+      &::before {
+        content: "";
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+
+        @include phones {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      &.socials__item--email {
+        &.socials__item__link {
+          &::before {
+            background: url(../img/icons/At-sign.svg) center center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      &.socials__item--tel {
+        &.socials__item__link {
+          &::before {
+            background: url(../img/icons/Phone.svg) center center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      &.socials__item--telegram {
+        &.socials__item__link {
+          &::before {
+            background: url(../img/icons/Telegram.svg) center center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

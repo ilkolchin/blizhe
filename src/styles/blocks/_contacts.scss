@@ -1,4 +1,5 @@
 @use "../variables/var.scss" as *;
+@use "../layout/media.scss" as *;
 
 .contacts {
   display: flex;
@@ -9,12 +10,26 @@
     background-attachment: fixed;
     background-position-y: 20%;
     background-position-x: 40%;
+
+    @include phones {
+      background-size: 200%;
+      background-position-x: 25%;
+      background-position-y: 0%;
+    }
+  }
+
+  &__content {
+    min-height: 70vh;
   }
 
   &__block {
     display: flex;
     flex: 1;
     margin: 0 25%;
+
+    @include phones {
+      margin: 0 5%;
+    }
   }
 
   &__title {
@@ -24,5 +39,13 @@
     display: flex;
     align-items: flex-end;
     padding: 10% 0;
+  }
+
+  &__socials {
+    padding-top: 10%;
+
+    &__text {
+      margin-bottom: 5%;
+    }
   }
 }
