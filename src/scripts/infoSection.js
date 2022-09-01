@@ -12,11 +12,8 @@ const Observer = new IntersectionObserver((entries) => {
   }
 });
 
-const PageCheck = () => {
-  if (window.location.pathname !== "/") return;
+export const InfoSectionObserve = () => {
   for (const text of texts) {
     Observer.observe(text);
   }
 };
-
-PageCheck();

@@ -85,25 +85,38 @@
   &__blue {
     background-color: $blue;
 
-    .info__content {
-      flex-direction: row-reverse;
+    .info {
+      &__content {
+        flex-direction: row-reverse;
+        margin-left: 4%;
 
-      @include phones {
-        flex-direction: column;
+        @include phones {
+          flex-direction: column;
+        }
+      }
+
+      &__text {
+        margin-right: 0;
+        margin-left: 0;
+
+        @include phones {
+          margin-left: 0%;
+        }
       }
     }
 
-    .info__text {
-      margin-right: 0;
-      margin-left: 10%;
+    .info__image {
+      height: 40rem;
+      width: 40rem;
+
+      &.slide-in-bl {
+        opacity: 1;
+      }
 
       @include phones {
-        margin-left: 0%;
+        height: 25rem;
+        width: 25rem;
       }
-    }
-
-    .info__image.slide-in-bl {
-      opacity: 1;
     }
   }
 }

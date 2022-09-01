@@ -1,4 +1,4 @@
-const FeedbackSlide = () => {
+export const FeedbackSlide = () => {
   const btn = document.querySelector(".feedback__btn");
   const section = document.querySelector(".feedback");
   const hoverSection = document.querySelector(".hoverFeedback");
@@ -20,11 +20,4 @@ const FeedbackSlide = () => {
   };
   section.addEventListener("click", disActivateSection);
   btnMobile.addEventListener("click", disActivateSection);
-};
-
-const FeedbackSlideCheck = () => {
-  if (window.location.pathname !== "/") return;
-  FeedbackSlide();
-};
-
-FeedbackSlideCheck();
+}

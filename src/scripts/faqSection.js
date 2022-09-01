@@ -5,6 +5,8 @@ const ToggleText = (event) => {
   block.classList.toggle("open");
 };
 
-titles.forEach((element) => {
-  element.addEventListener("click", ToggleText);
-});
+export const FaqSection = () => {
+  titles.forEach((element) => {
+    element.addEventListener("click", ToggleText);
+  });
+};

@@ -1,7 +1,6 @@
 import IMask from "imask";
 
 const Mask = () => {
-  if (window.location.pathname !== "/") return;
   const telInput = document.querySelector(".form__input--tel");
 
   const maskOptions = {
@@ -11,4 +10,6 @@ const Mask = () => {
   IMask(telInput, maskOptions);
 };
 
-Mask();
+export const FormMask = () => {
+  Mask();
+};

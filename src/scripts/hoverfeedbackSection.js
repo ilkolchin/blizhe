@@ -10,9 +10,6 @@ const Observer = new IntersectionObserver((entries) => {
   });
 });
 
-const ObserverCheck = () => {
-  if (window.location.pathname !== "/") return;
+export const HoverFeedbackObserve = () => {
   Observer.observe(svg);
 };
-
-ObserverCheck();

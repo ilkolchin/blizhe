@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 
-const Form = () => {
+export const Form = () => {
   if (window.location.pathname !== "/") return;
 
   const form = document.getElementById("form");
@@ -36,6 +36,4 @@ const Form = () => {
       );
   };
   form.addEventListener("submit", handleSubmit);
-};
-
-Form();
+}

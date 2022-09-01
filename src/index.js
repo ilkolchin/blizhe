@@ -1,15 +1,31 @@
+//styles
 import "sanitize.css";
 import "sanitize.css/forms.css";
 import "sanitize.css/typography.css";
 import "./styles/main.scss";
 
-import "./scripts/faqSection";
-import "./scripts/feedbackSection";
-import "./scripts/form";
+//global
 import "./scripts/fullscreenmenu";
 import "./scripts/header";
-import "./scripts/hoverfeedbackSection";
-import "./scripts/infoSection";
-import "./scripts/mask";
 
-console.log(screen.width);
+//index.html
+import { FeedbackSlide } from "./scripts/feedbackSlide";
+import { Form } from "./scripts/form";
+import { HoverFeedbackObserve } from "./scripts/hoverfeedbackSection";
+import { InfoSectionObserve } from "./scripts/infoSection";
+import { FormMask } from "./scripts/mask";
+
+if (window.location.pathname === "/") {
+  InfoSectionObserve();
+  FeedbackSlide();
+  HoverFeedbackObserve();
+  Form();
+  FormMask();
+}
+
+//faq
+import { FaqSection } from "./scripts/faqSection";
+
+if (window.location.pathname === "/faq.html") {
+  FaqSection();
+}
